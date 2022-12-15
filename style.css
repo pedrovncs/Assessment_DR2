@@ -1,0 +1,105 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tile_row {
+  float: left;
+  width: 100%;
+}
+.tile {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background-color: cadetblue;
+  margin: 1px;
+  font-size: 25px;
+}
+
+.tile:hover{
+  cursor: pointer;
+  background-color: rgba(95, 158, 160, 0.7);
+}
+
+.disable{
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.jogadorX{
+  float: left;
+  width: 50px;
+  height: 50px;
+  background-color: cadetblue;
+  margin: 1px;
+  font-size: 25px;
+}
+
+.jogadorO{
+  float: left;
+  width: 50px;
+  height: 50px;
+  background-color: cadetblue;
+  margin: 1px;
+  font-size: 25px;
+}
+
+#refresh{
+  border-radius: 5px;
+  background-color: #e8e8e8;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#jogadorDaVez {
+  color: red;
+}
+
+button{
+  cursor: pointer;
+}
+
+
+#placar{
+  text-align: center;
+  margin-top: 25px;
+  border: 2px black solid;
+  width: 200px;
+  height: 100%;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+#placar h2{
+  margin: 5px;
+  padding: 0;
+}
+
+#placar span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#pontosX{
+  color: red;
+  font-style: italic;
+}
+
+#pontosO{
+  color: blue;
+  font-style: italic;
+}
+
+
+#tempo h2{
+  display: inline;
+}
+
+#tempo span{
+  font-family: helvetica;
+  font-size: 22;
+  font-weight: bolder;
+}

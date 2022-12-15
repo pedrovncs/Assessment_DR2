@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Jogo da Velha</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Jogo da Velha</h1>
+    
+    <h2>Jogador da vez: <span id="jogadorDaVez">X</span></h2>
+  </header>
+
+  <main>
+    <div class="tile_row">
+      <button id="tile1" class="tile" onclick="marcaCasa(event, 1)"></button>
+      <button id="tile2" class="tile" onclick="marcaCasa(event, 2)"></button>
+      <button id="tile3" class="tile" onclick="marcaCasa(event, 3)"></button>
+    </div>
+    <div class="tile_row">
+      <button id="tile4" class="tile" onclick="marcaCasa(event, 4)"></button>
+      <button id="tile5" class="tile" onclick="marcaCasa(event, 5)"></button>
+      <button id="tile6" class="tile" onclick="marcaCasa(event, 6)"></button>
+    </div>
+    <div class="tile_row">
+      <button id="tile7" class="tile" onclick="marcaCasa(event, 7)"></button>
+      <button id="tile8" class="tile" onclick="marcaCasa(event, 8)"></button>
+      <button id="tile9" class="tile" onclick="marcaCasa(event, 9)"></button>
+    </div>
+    <button id="refresh" onclick="refresh()" title="Clique para recomeçar">Recomeçar a partida</button>
+    <h1 id="textoVencedor" hidden> O vencedor foi: <i id="vencedor"></i></h1>
+    <div id="placar">
+      <h2>Placar</h2>
+      <span>Jogador X: &nbsp; <span id="pontosX">0</span></span>
+      <br>
+      <span>Jogador O: &nbsp; <span id="pontosO">0</span></span>
+    </div>
+    <div id="tempo">
+      <h2>Recorde de tempo atual:</h2>
+      <span><i id="tempoPartida"></i></span>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
